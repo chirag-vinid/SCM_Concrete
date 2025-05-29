@@ -8,7 +8,7 @@ const char* password = "hahaha123";
 
 //API Fields of ThingSpeak Channel
 const char* server = "http://api.thingspeak.com";
-const char* apikey = "LGRYWV2SCLMI41TC
+const char* apikey = "LGRYWV2SCLMI41TC";
 
 //LED State Variable
 bool ledState = false;
