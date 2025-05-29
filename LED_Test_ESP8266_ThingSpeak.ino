@@ -1,16 +1,27 @@
+//Header Files
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 
+//Wifi Connection of ESP8266
 const char* ssid = "Chirag's S22";
 const char* password = "hahaha123";
+
+//API Fields of ThingSpeak Channel
 const char* server = "http://api.thingspeak.com";
-const char* apikey = "LGRYWV2SCLMI41TC";
+const char* apikey = "LGRYWV2SCLMI41TC
+
+//LED State Variable
 bool ledState = false;
+
+//WiFi Client Object for HTTP Request
 WiFiClient client;
 
-void setup() {
-  // put your setup code here, to run once:
+void setup()
+{
+  //Assign GPIO5 or D1 to LED
   pinMode(5, OUTPUT);
+
+  //Connecting to Wifi
   Serial.begin(115200);
   Serial.print("Connecting to Wifi");
   Serial.println(ssid);
@@ -26,12 +37,14 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  //Inverting State of LED
   ledState = !ledState;
   digitalWrite(5, ledState ? HIGH : LOW);
   Serial.print("LED is ");
   if (ledState) Serial.println("On");
   else Serial.println("Off");
+
+  //HTTP Request to Send Status Update to ThingSpeak
   if (WiFi.status()==WL_CONNECTED)
   {
     HTTPClient http;
