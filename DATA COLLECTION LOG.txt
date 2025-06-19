@@ -3,3 +3,4 @@ DATA COLLECTION LOG
 June 17 14:43 to 15:00 - Dry Run
 June 17 16:31 to 16:35 - SG mix Batch 1
 June 17 16:44 to 16:45 - SG mix Batch 2
+June 18 11:44 to 11:47 - SG Cover
