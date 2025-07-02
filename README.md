@@ -6,13 +6,16 @@ This project presents a real-time monitoring solution for a cement mixer using t
 
 ## 📁 Repository Structure
 
+```
 SCM_Concrete/
-├── 📁 Codes/ # All Arduino and Python code files
-├── 📁 Data/ # Collected sensor data and logs
-├── 📁 Documents/ # Project documentation files (PDFs)
-├── 📁 Other/ # Additional Python scripts created during the internship
-├── 📁 Tests/ # Experimental/test code for concept verification
-└── README.md # This file
+├── 📁 Codes/            # All Arduino and Python code files
+├── 📁 Data/             # Collected sensor data and logs
+├── 📁 Documents/        # Project documentation files (PDFs)
+├── 📁 Other/            # Additional Python scripts created during the internship
+├── 📁 Tests/            # Experimental/test code for concept verification
+└── README.md            # This file
+```
+
 
 ---
 
